@@ -32,6 +32,7 @@ const favoriteRestoDb = {
     return (await dbPromise).delete(OBJECT_STORE_APP, id);
   },
 
+  // Line di bawah buat ngetes search resto bang
   async searchResto(query) {
     return (await this.getAllResto()).filter((resto) => {
       const loweredCaseRestoTitle = (resto.title || '-').toLowerCase();
