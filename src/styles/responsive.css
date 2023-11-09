@@ -1,0 +1,83 @@
+@media (min-width: 1200px) {
+    .hero {
+      background-size: 100% auto;
+    }
+    
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+    }
+  
+    .drawer {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      position: absolute;
+  
+      top: 60px;
+      right: 0;
+      z-index: 1;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .drawer a {
+      padding-inline: 40px;
+      padding-block: 15px;
+      line-height: 60px;
+    
+      color: black;
+      text-decoration: none;
+    }
+  
+    .drawer.active {
+      display: flex;
+    }
+  
+    #restaurant-list-item {
+      grid-template-columns: 1fr; /* Satu kolom pada tampilan seluler */
+      row-gap: 5px; /* Mengurangi jarak antar baris */
+      column-gap: 0; /* Tidak ada jarak antar kolom */
+    }
+  
+    .restaurant-item {
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .restaurant-item h2 {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-item h3 {
+      font-size: 0.8rem;
+    }
+  
+    .restaurant-item p {
+      font-size: 0.8rem;
+    }
+
+    /* 
+    Detail Restaurant Pages
+    */
+
+    .food-menu, .drink-menu {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .restaurant-header {
+      margin-inline: 10px;
+    }
+
+    /*
+    Favorites Page
+    */
+
+    .fav-resto {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
