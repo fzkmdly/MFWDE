@@ -7,7 +7,7 @@
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist",
-    "test": "jest",
+    "test": "karma start",
     "test:watch": "jest --watchAll"
   },
   "keywords": [],
