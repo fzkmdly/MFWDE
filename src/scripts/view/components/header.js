@@ -6,8 +6,8 @@ class header extends HTMLElement {
   render() {
     this.innerHTML = `
         <section class="Identity">
-            <img src="./images/logo/android-chrome-192x192.png" alt="AkaRestourant Logo" />
-            <h2>AkaRestourant</h2>
+            <img src="./images/logo/android-chrome-192x192.png" alt="AkaRestaurant Logo" />
+            <h2>AkaRestaurant</h2>
         </section>
         <button class="menu-button" id="open-drawer">&#9776;</button>
         <nav class="drawer" id="drawer">

@@ -7,18 +7,19 @@ const restaurantItem = (restaurant) => {
           <h2><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h2>
           <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar ${restaurant.name}" crossorigin="anonymous">
         </div>
+        <br>
         <section class="cardDesc">
-          <p>${restaurant.description}</p>
           <table>
-            <tr>
-              <th>Alamat</th>
-              <td>: ${restaurant.city}</td>
-            </tr>
-            <tr>
-              <th>Rating</th>
-              <td>: ${restaurant.rating}</td>
-            </tr>
-          </table>
+          <tr>
+            <th>Alamat</th>
+            <td>: ${restaurant.city}</td>
+          </tr>
+          <tr>
+            <th>Rating</th>
+            <td>: ${restaurant.rating}</td>
+          </tr>
+        </table>
+        <p>${restaurant.description}</p>
         </section>
         <section id="like-button-container"></section>
       </div>
