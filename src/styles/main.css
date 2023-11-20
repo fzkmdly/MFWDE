@@ -14,6 +14,7 @@ html, body {
   top: -40px;
   left: 0;
   padding: 8px;
+  padding-inline: 4px;
   background-color: #bf1722;
   color: white;
   z-index: 100;
