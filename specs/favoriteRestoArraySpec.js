@@ -1,5 +1,3 @@
-// File ini buat ngetes halaman favorite resto bang
-
 import {itActsAsFavoriteRestoModel} from './contract/favoriteRestaurantContract';
 
 let favoriteRestaurants = [];
