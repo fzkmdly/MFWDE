@@ -3,6 +3,8 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import './view/components/header';
 import './view/components/footer';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import App from './view/app';
 import swRegister from './utils/swRegister';
 

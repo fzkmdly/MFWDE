@@ -5,7 +5,7 @@ const restaurantItem = (restaurant) => {
       <div class="restaurant-item" id="restaurant-item">
         <div class="topCard">
           <h2><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h2>
-          <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar ${restaurant.name}" crossorigin="anonymous">
+          <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="Gambar ${restaurant.name}" crossorigin="anonymous">
         </div>
         <section class="cardDesc">
           <p>${restaurant.description}</p>
@@ -30,7 +30,7 @@ const restaurantItemDetail = (restaurant) => {
     <article class="restaurant-detail">
       <div class="restaurant-header">
         <h1>${restaurant.name}</h1>
-        <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" crossorigin="anonymous">
+        <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" crossorigin="anonymous">
         <div class="resto-desc">
           <p>${restaurant.description}</p>
           <p><b>Location</b> : ${restaurant.city}, ${restaurant.address}</p>
