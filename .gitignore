@@ -3,3 +3,4 @@ yarn.lock
 package-lock.json
 
 e2e/outputs/
+dist/
